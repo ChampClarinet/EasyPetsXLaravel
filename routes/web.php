@@ -11,13 +11,13 @@
 |
 */
 
-// Route::get('/', function () {
-//     // Only authenticated users may enter...
-//     return view('welcome');
-// })->middleware('auth');
+Route::get('/', 'ShopController@dashboard');
 
-//Route::get('/', 'LoginController@index');
+Route::resource('shop', 'ShopController')->except(['index', 'destroy']);
+Route::resource('reviews', 'ReviewController');
 
-Route::get('/',function(){ return View::make('Login/login'); });
+Route::get('login', function () {
+    return view('login.login');
+});
 
-Route::get('test',function(){ return view('Login/app'); });
+Route::get('test', 'ShopController@test');

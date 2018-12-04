@@ -45,10 +45,6 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
-
-        'api' => [
-            'driver' => 'firebase',
-        ],
     ],
 
     /*

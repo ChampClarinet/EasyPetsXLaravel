@@ -27,13 +27,4 @@ class AuthServiceProvider extends ServiceProvider
 
         //
     }
-
-    // Auth::viaRequest('firebase', function($request){
-    //   return app(FirebaseGuard::class)->user($request);
-    // });
-
-    // $this->app->singleton(Verifier::class, function ($app) {
-    //   return new Verifier('EasyPets');
-    // });
-
 }
