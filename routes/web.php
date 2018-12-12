@@ -20,4 +20,4 @@ Route::get('login', function () {
     return view('login.login');
 });
 
-Route::get('test', 'ShopController@test');
+Route::get('test', 'ShopController@test2');
