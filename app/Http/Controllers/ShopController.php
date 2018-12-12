@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\Shop;
 
 class ShopController extends Controller
 {
@@ -27,8 +28,17 @@ class ShopController extends Controller
         return view('template', compact('active', 'shop', 'pageTitle'));
     }
 
+    public function test2(){
+        $active = 0;
+        $shop = $this->mockShop;
+        $pageTitle = "Test";
+        return view('test', compact('active', 'shop', 'pageTitle'));
+    }
+
     public function dashboard(){
         $active = 1;
+        $id = 4; //mock ไว้ก่อน ยังไม่ต่อ db
+        //$shop = Shop::find($id); //get shop
         $shop = $this->mockShop;
         $pageTitle = __('pages.index');
         return view('index', compact('active', 'shop', 'pageTitle'));
