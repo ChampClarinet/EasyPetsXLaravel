@@ -13,8 +13,8 @@ class CreateHospitalsTable extends Migration
      */
     public function up()
     {
-        Schema::table('Hospitals', function (Blueprint $table) {
-            $table->increment('id');
+        Schema::create('Hospitals', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('shop_id');
             $table->boolean('accepted_serious_operation');
             $table->integer('vaccine_rate');

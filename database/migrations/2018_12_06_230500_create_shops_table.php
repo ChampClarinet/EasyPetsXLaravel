@@ -13,7 +13,7 @@ class CreateShopsTable extends Migration
      */
     public function up()
     {
-        Schema::table('Shops', function (Blueprint $table) {
+        Schema::create('Shops', function (Blueprint $table) {
             $table->increments('id');
             $table->string('owner_uid');
             $table->string('name');

@@ -37,9 +37,8 @@ class ShopController extends Controller
 
     public function dashboard(){
         $active = 1;
-        $id = 4; //mock ไว้ก่อน ยังไม่ต่อ db
-        //$shop = Shop::find($id); //get shop
-        $shop = $this->mockShop;
+        $id = 4;
+        $shop = Shop::find($id); //get shop
         $pageTitle = __('pages.index');
         return view('index', compact('active', 'shop', 'pageTitle'));
     }

@@ -13,7 +13,7 @@ class CreateGroomsTable extends Migration
      */
     public function up()
     {
-        Schema::table('Grooms', function (Blueprint $table) {
+        Schema::create('Grooms', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('shop_id');
             $table->integer('price_rate');

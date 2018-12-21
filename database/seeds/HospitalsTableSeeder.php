@@ -13,28 +13,28 @@ class HospitalsTableSeeder extends Seeder
     {
         DB::table('Hospitals')->insert([
             'shop_id' => 2,
-            'accepted_serious_opertaion' => false,
+            'accepted_serious_operation' => false,
             'vaccine_rate' => 50,
             'operation_rate' => 100,
             'checkup_rate' => 50
         ]);
         DB::table('Hospitals')->insert([
             'shop_id' => 3,
-            'accepted_serious_opertaion' => true,
+            'accepted_serious_operation' => true,
             'vaccine_rate' => 100,
             'operation_rate' => 300,
             'checkup_rate' => 100
         ]);
         DB::table('Hospitals')->insert([
             'shop_id' => 7,
-            'accepted_serious_opertaion' => true,
+            'accepted_serious_operation' => true,
             'vaccine_rate' => 300,
             'operation_rate' => 1000,
             'checkup_rate' => 400
         ]);
         DB::table('Hospitals')->insert([
             'shop_id' => 8,
-            'accepted_serious_opertaion' => false,
+            'accepted_serious_operation' => false,
             'vaccine_rate' => 100,
             'operation_rate' => 400,
             'checkup_rate' => 250

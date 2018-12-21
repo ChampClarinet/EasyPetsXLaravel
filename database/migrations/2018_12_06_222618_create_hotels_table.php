@@ -13,7 +13,7 @@ class CreateHotelsTable extends Migration
      */
     public function up()
     {
-        Schema::table('Hotels', function (Blueprint $table) {
+        Schema::create('Hotels', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('shop_id');
             $table->boolean('accepted_overnight');

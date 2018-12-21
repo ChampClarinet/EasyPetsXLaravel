@@ -13,9 +13,9 @@ class CreateSpecialPetsTable extends Migration
      */
     public function up()
     {
-        Schema::table('Special_Pets', function (Blueprint $table) {
+        Schema::create('Special_Pets', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('name');
+            $table->string('name');
             $table->timestamps();
         });
     }

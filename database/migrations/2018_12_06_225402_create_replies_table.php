@@ -13,7 +13,7 @@ class CreateRepliesTable extends Migration
      */
     public function up()
     {
-        Schema::table('Replies', function (Blueprint $table) {
+        Schema::create('Replies', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('review_id');
             $table->string('text')->nullable();

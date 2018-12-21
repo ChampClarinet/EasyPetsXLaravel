@@ -13,7 +13,7 @@ class CreateOtherServicesTable extends Migration
      */
     public function up()
     {
-        Schema::table('Other_Services', function (Blueprint $table) {
+        Schema::create('Other_Services', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('shop_id');
             $table->string('details');

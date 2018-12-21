@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class SpecialPetsTableSeeder extends Seeder
+class Special_PetsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

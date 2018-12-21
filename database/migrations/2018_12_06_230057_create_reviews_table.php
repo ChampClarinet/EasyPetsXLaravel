@@ -13,7 +13,7 @@ class CreateReviewsTable extends Migration
      */
     public function up()
     {
-        Schema::table('Reviews', function (Blueprint $table) {
+        Schema::create('Reviews', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('shop_id');
             $table->string('uid');

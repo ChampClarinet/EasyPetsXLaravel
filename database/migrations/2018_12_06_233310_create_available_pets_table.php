@@ -13,7 +13,7 @@ class CreateAvailablePetsTable extends Migration
      */
     public function up()
     {
-        Schema::table('Available_Pets', function (Blueprint $table) {
+        Schema::create('Available_Pets', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('shop_id');
             $table->integer('pet_id');
